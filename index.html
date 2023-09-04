@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordToggleHide</title>
+ <link rel="stylesheet" href="style.css"></head>
+<body>
+    Password: <input type="password" value="AvinashTeacher" id="togglehide">
+<input type="checkbox" id="passclick"  onclick="toggle()">Show Password
+<script>
+    function toggle() {
+  const pass = document.getElementById("togglehide");
+  if (pass.type === "password") {
+    pass.type = "text";
+  } else {
+    pass.type = "password";
+  }
+}
+</script>
+</body>
+</html>
